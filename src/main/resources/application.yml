@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+logging:
+  level:
+    org:
+      springframework: info
+#test: 60
+
+spring:
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+    #设置为none时禁用缓存.
+    type: ehcache
